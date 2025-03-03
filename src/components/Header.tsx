@@ -3,10 +3,10 @@ import { Link } from "react-scroll";
 import { Menu, X, Mail } from "lucide-react";
 
 const sections = [
-    {
+  {
     id: "home",
     name: "Inicio",
-    },
+  },
   {
     id: "about",
     name: "Sobre Nosotros",

@@ -1,0 +1,15 @@
+.columnIcon{
+    @apply flex items-center space-x-4 p-6 bg-[#1D2D50] rounded-lg;
+}
+
+.columnIco:nth-child(1){
+    @apply bg-blue-600 p-3 rounded-lg;
+}
+
+.columnIcon >h3 {
+    @apply font-semibold text-lg;
+}
+
+.columnIcon > p {
+    @apply text-gray-300;
+}
