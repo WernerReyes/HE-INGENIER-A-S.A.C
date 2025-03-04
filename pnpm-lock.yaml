@@ -14,9 +14,12 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
+<<<<<<< HEAD
       framer-motion:
         specifier: ^12.4.10
         version: 12.4.10(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+=======
+>>>>>>> b6104bceba640f43e167a899b2e307a49b67b907
       lucide-react:
         specifier: ^0.344.0
         version: 0.344.0(react@18.3.1)
@@ -32,11 +35,16 @@ importers:
       react-scroll:
         specifier: ^1.9.2
         version: 1.9.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+<<<<<<< HEAD
       react-typed:
         specifier: ^2.0.12
         version: 2.0.12(react@18.3.1)
       tailwind-merge:
         specifier: ^3.0.1
+=======
+      tailwind-merge:
+        specifier: ^3.0.2
+>>>>>>> b6104bceba640f43e167a899b2e307a49b67b907
         version: 3.0.2
     devDependencies:
       '@eslint/js':

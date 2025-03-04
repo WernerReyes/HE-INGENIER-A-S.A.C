@@ -12,10 +12,14 @@ import {
   Twitter,
   Zap,
 } from "lucide-react";
-import About from "./components/About";
+
 import Header from "./components/Header";
 import { Link } from "react-scroll";
-import { AboutUsSection } from "./section";
+
+
+import { AboutUsSection, ContactSection } from "./section";
+import { WhatsApp } from "./section/contact/WhatsApp";
+
 
 function App() {
   return (
@@ -97,70 +101,13 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="relative bg-[#0A2239] text-white py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative inline-block">
-            <span className="pb-2 border-b-4 border-secondary">
-              Contáctanos
-            </span>
-          </h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div className="flex items-center space-x-4 p-6 bg-[#1D2D50] rounded-lg">
-                <div className="bg-blue-600 p-3 rounded-lg">
-                  <Phone className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Teléfono</h3>
-                  <p className="text-gray-300">983113550</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4 p-6 bg-[#1D2D50] rounded-lg">
-                <div className="bg-blue-600 p-3 rounded-lg">
-                  <Mail className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Email</h3>
-                  <p className="text-gray-300">info@heingenieria.com</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-4 p-6 bg-[#1D2D50] rounded-lg">
-                <div className="bg-blue-600 p-3 rounded-lg">
-                  <MapPin className="text-white" size={24} />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Dirección</h3>
-                  <p className="text-gray-300">
-                    JR. SAN IGNACIO NRO. 523 - SMP
-                  </p>
-                </div>
-              </div>
-            </div>
-            <form className="space-y-6 bg-[#1D2D50] p-8 rounded-lg shadow-lg">
-              <input
-                type="text"
-                placeholder="Tu Nombre"
-                className="w-full p-4 rounded-lg bg-[#0A2239] border border-gray-600 focus:border-[#F4A261] focus:ring-2 focus:ring-[#F4A261] transition-all duration-200 text-white"
-              />
-              <input
-                type="email"
-                placeholder="Tu Email"
-                className="w-full p-4 rounded-lg bg-[#0A2239] border border-gray-600 focus:border-[#F4A261] focus:ring-2 focus:ring-[#F4A261] transition-all duration-200 text-white"
-              />
-              <textarea
-                placeholder="Tu Mensaje"
-                rows={4}
-                className="w-full p-4 rounded-lg bg-[#0A2239] border border-gray-600 focus:border-[#F4A261] focus:ring-2 focus:ring-[#F4A261] transition-all duration-200 text-white"
-              ></textarea>
-              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 flex items-center justify-center space-x-2">
-                <Mail size={20} />
-                <span>Enviar Mensaje</span>
-              </button>
-            </form>
-          </div>
-        </div>
+  
+      {/* Footer Section */}
+      <section id="contact" className="relative bg-primary text-white py-20">
+        <ContactSection />
       </section>
+
+
 
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
@@ -182,22 +129,46 @@ function App() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link key="home" to="home" className="cursor-pointer" smooth={true} duration={500}>
+                <Link
+                  key="home"
+                  to="home"
+                  className="cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link key="about" to="about" className="cursor-pointer" smooth={true} duration={500}>
+                <Link
+                  key="about"
+                  to="about"
+                  className="cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
                   Sobre Nosotros
                 </Link>
               </li>
               <li>
-                <Link key="services" to="services" className="cursor-pointer" smooth={true} duration={500}>
+                <Link
+                  key="services"
+                  to="services"
+                  className="cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
                   Nuestros Servicios
                 </Link>
               </li>
               <li>
-                <Link key="contact" to="contact" className="cursor-pointer" smooth={true} duration={500}>
+                <Link
+                  key="contact"
+                  to="contact"
+                  className="cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
                   Contáctanos
                 </Link>
               </li>
@@ -253,7 +224,9 @@ function App() {
       </footer>
 
       {/* WhatsApp Button */}
-      <a
+      <WhatsApp/>
+
+      {/* <a
         href="https://wa.me/983113550"
         target="_blank"
         rel="noopener noreferrer"
@@ -288,7 +261,7 @@ function App() {
             </g>
           </g>
         </svg>
-      </a>
+      </a> */}
     </div>
   );
 }
