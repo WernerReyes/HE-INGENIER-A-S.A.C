@@ -15,6 +15,8 @@ import {
 import About from "./components/About";
 import Header from "./components/Header";
 import { Link } from "react-scroll";
+import { ContactSection } from "./section";
+import { WhatsApp } from "./section/contact/WhatsApp";
 
 function App() {
   return (
@@ -97,7 +99,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative bg-[#0A2239] text-white py-20">
+      {/* <section id="contact" className="relative bg-[#0A2239] text-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 relative inline-block">
             <span className="pb-2 border-b-4 border-secondary">
@@ -159,7 +161,14 @@ function App() {
             </form>
           </div>
         </div>
+      </section> */}
+
+      {/* Footer Section */}
+      <section id="contact" className="relative bg-[#0A2239] text-white py-20">
+        <ContactSection />
       </section>
+
+
 
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
@@ -181,22 +190,46 @@ function App() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link key="home" to="home" className="cursor-pointer" smooth={true} duration={500}>
+                <Link
+                  key="home"
+                  to="home"
+                  className="cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link key="about" to="about" className="cursor-pointer" smooth={true} duration={500}>
+                <Link
+                  key="about"
+                  to="about"
+                  className="cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
                   Sobre Nosotros
                 </Link>
               </li>
               <li>
-                <Link key="services" to="services" className="cursor-pointer" smooth={true} duration={500}>
+                <Link
+                  key="services"
+                  to="services"
+                  className="cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
                   Nuestros Servicios
                 </Link>
               </li>
               <li>
-                <Link key="contact" to="contact" className="cursor-pointer" smooth={true} duration={500}>
+                <Link
+                  key="contact"
+                  to="contact"
+                  className="cursor-pointer"
+                  smooth={true}
+                  duration={500}
+                >
                   Contáctanos
                 </Link>
               </li>
@@ -252,7 +285,9 @@ function App() {
       </footer>
 
       {/* WhatsApp Button */}
-      <a
+      <WhatsApp/>
+
+      {/* <a
         href="https://wa.me/983113550"
         target="_blank"
         rel="noopener noreferrer"
@@ -287,7 +322,7 @@ function App() {
             </g>
           </g>
         </svg>
-      </a>
+      </a> */}
     </div>
   );
 }
