@@ -15,6 +15,7 @@ import {
 import About from "./components/About";
 import Header from "./components/Header";
 import { Link } from "react-scroll";
+import { AboutUsSection } from "./section";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       <Header />
 
       {/* About Section */}
-      <About />
+      <AboutUsSection />
 
       {/* Services Section */}
       <section

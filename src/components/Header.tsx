@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { Menu, X, Mail } from "lucide-react";
+import { HeroSection } from "../section";
 
 const sections = [
   {
@@ -133,24 +134,7 @@ const Header = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Ingeniería y Construcción de Alta Calidad
-        </h1>
-        <p className="text-xl text-gray-200 mb-8 max-w-2xl">
-          Experiencia en proyectos de infraestructura eléctrica, sistemas de
-          protección a tierra y mantenimiento eléctrico.
-        </p>
-        <Link
-          to="contact"
-          smooth={true}
-          duration={500}
-          className="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white px-8 py-3 rounded-md font-semibold transition transform hover:scale-105 duration-200 flex items-center space-x-2"
-        >
-          <Mail size={20} />
-          <span>Contáctanos</span>
-        </Link>
-      </div>
+      <HeroSection />
     </header>
   );
 };

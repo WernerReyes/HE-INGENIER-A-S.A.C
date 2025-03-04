@@ -6,6 +6,7 @@ export default {
       colors: {
         "primary": "#0A2239",
         "secondary": "#F4A261",
+        "tertiary": "#2563eb",
         blue: {
           400: '#60A5FA',
           600: '#2563EB',
